@@ -1,8 +1,5 @@
-package old;
+package Lesson1;
 
-import Lesson2.*;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +12,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Artur on 07.05.2017.
  */
-public class TestHW2 {
+public class old {
     public WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)

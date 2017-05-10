@@ -1,12 +1,7 @@
-package old;
+package Lesson1;
 
 import org.testng.annotations.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
-import sun.util.locale.LocaleUtils;
-
-import java.util.Locale;
 
 import static org.junit.Assert.assertEquals;
 

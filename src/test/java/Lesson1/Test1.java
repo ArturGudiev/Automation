@@ -1,7 +1,5 @@
-package old;
+package Lesson1;
 
-import com.sun.jna.platform.FileUtils;
-import org.apache.http.util.Asserts;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,22 +12,18 @@ import org.openqa.selenium.ie.*;
  */
 import org.junit.Test;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.apache.commons.io.FileUtils.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.OutputType.FILE;
-import static sun.net.www.protocol.http.HttpURLConnection.userAgent;
 
 public class Test1 {
 

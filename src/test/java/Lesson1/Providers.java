@@ -1,8 +1,6 @@
-package old;
+package Lesson1;
 
-import Lesson2.User;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 /**
  * Created by Artur on 07.05.2017.

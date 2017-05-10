@@ -1,14 +1,11 @@
-package old;
+package Lesson1;
 
 import Lesson2.DataProviders;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
