@@ -1,5 +1,6 @@
-package com.facebook.tests;
+package old;
 
+import Lesson2.*;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
@@ -14,7 +15,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Artur on 07.05.2017.
  */
-public class LoginTestFacebookExtra {
+public class TestHW2 {
     public WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)
@@ -25,25 +26,27 @@ public class LoginTestFacebookExtra {
 
     @AfterSuite(alwaysRun = true)
     public void tearDown(){
-    //    driver.quit();
+            driver.quit();
     }
 
-    @Test(groups = {"p1"})
+    @Test()
     public void loadPage(){
-        driver.get("http://www.facebook.com");
-        System.out.println(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), "Добро пожаловать на Фейсбук - заходите, регистрируйтесь и находите друзей.");
+        //driver.get("http://www.facebook.com");
+//        System.out.println(driver.getTitle());
+        //Assert.assertEquals(driver.getTitle(), "Добро пожаловать на Фейсбук - заходите, регистрируйтесь и находите друзей.");
     }
 
-    @Test(groups = {"p2", "field"}, dependsOnMethods = "loadPage")
-    public void filloutEmailFld(){
-        String email = "artur15rus@yandex.ru";
-        WebElement emailFId = driver.findElement(By.cssSelector("#email"));
-        emailFId.sendKeys(email);
-        Assert.assertEquals(emailFId.getAttribute("value"), email);
+    @Test(dependsOnMethods = "loadPage", dataProvider = "corData", dataProviderClass = Lesson2.DataProviders.class)
+    public void loginCorrect(String login, String pass){
+        System.out.println(login + ":" + pass);
+//        driver.findElement(By.cssSelector("#email")).sendKeys(login);
+//        driver.findElement(By.cssSelector("#pass")).sendKeys(pass);
+//        driver.findElement(By.id("loginbutton")).click();
+//        System.out.println(driver.getTitle());
+
     }
 
-    @Test(groups = {"p2", "field"}, dependsOnMethods = "filloutEmailFld")
+    @Test(groups = {"positive"}, dependsOnMethods = "filloutEmailFld", dataProvider = "correctData")
     public void filloutPassFld(){
         String password = "1234567890facebook";
         WebElement passwordFld = driver.findElement(By.cssSelector("#pass"));
@@ -51,7 +54,7 @@ public class LoginTestFacebookExtra {
         Assert.assertEquals(passwordFld.getAttribute("value"), password);
     }
 
-    @Test(groups = {"p3", "action"}, dependsOnMethods = "filloutPassFld")
+    @Test(groups = {"poisitive"}, dependsOnMethods = "filloutPassFld")
     public void logIn(){
         WebElement logInBtn = driver.findElement(By.id("loginbutton"));
         logInBtn.click();

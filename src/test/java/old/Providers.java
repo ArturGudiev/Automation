@@ -1,3 +1,5 @@
+package old;
+
 import Lesson2.User;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -5,7 +7,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Artur on 07.05.2017.
  */
-public class DataProviders {
+public class Providers {
     @DataProvider(name = "incorData")
     public Object[][] incorData(){
         return new Object[][]{

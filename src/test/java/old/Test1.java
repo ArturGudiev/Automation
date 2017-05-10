@@ -1,3 +1,5 @@
+package old;
+
 import com.sun.jna.platform.FileUtils;
 import org.apache.http.util.Asserts;
 import org.junit.Assert;
@@ -28,7 +30,6 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.OutputType.FILE;
 import static sun.net.www.protocol.http.HttpURLConnection.userAgent;
-
 
 public class Test1 {
 

@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Login Tests">
-    <test name="p1 Test">
+    <test name="p2 Test">
         <groups>
             <run>
-                <include name="p1" />
+                <include name="p2" />
             </run>
         </groups>
         <classes>
-            <class name="com.facebook.tests.LoginTest" />
+            <class name="old.TestHW2" />
         </classes>
     </test>
 </suite>

@@ -1,3 +1,5 @@
+package Lesson2;
+
 import org.junit.Before;
 import org.testng.ITestResult;
 import org.testng.TestNG;

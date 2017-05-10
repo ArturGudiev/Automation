@@ -1,5 +1,6 @@
-package Lesson2;
+package old;
 
+import Lesson2.DataProviders;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Artur on 10.05.2017.
  */
-public class LoginTest {
+public class LoginTestComapping {
     public static WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)
